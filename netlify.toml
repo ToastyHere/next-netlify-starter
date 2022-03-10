@@ -1,13 +1,8 @@
 [build]
   command = "npm run build"
+  command = "mv robots-production.txt robots.txt"
   publish = ".next"
-
+  
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[context.production.branch-deploy]
-    command = "mv robots-disallow.txt robots.txt"
-
-
-[context.production]
-    command = "mv robots-production.txt robots.txt"
