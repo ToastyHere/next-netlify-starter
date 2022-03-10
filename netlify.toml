@@ -1,6 +1,5 @@
 [build]
   command = "npm run build"
-  command = "mv robots-production.txt robots.txt"
   publish = ".next"
   
 [[plugins]]
